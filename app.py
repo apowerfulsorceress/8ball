@@ -29,3 +29,14 @@ scope = ["https://spreadsheets.google.com/feeds", "https://www.googleapis.com/au
 creds = ServiceAccountCredentials.from_json_keyfile_name("oracle-8-ball-logger-42273e86e0ec.json", scope)
 client = gspread.authorize(creds)
 sheet = client.open("Oracle Log").sheet1
+if st.button("Consult the Oracle"):
+    if name and question:
+        st.write("The incense swirls... the shadows gather...")
+        answer = random.choice(responses)
+        st.success(f"{name}, the Oracle reveals: *{answer}*")
+
+        # Log to Google Sheet
+        timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        sheet.append_row([timestamp, name, question, answer])
+    else:
+        st.warning("You must offer both your name and a question.")
