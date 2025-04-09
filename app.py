@@ -1,5 +1,6 @@
 import streamlit as st
 import random
+from datetime import datetime
 
 st.title("Witchy Oracle 8 Ball")
 st.subheader("Summon the wisdom of the unseen...")
@@ -26,5 +27,16 @@ if st.button("Consult the Oracle"):
         st.write("The incense swirls... the shadows gather...")
         answer = random.choice(responses)
         st.success(f"{name}, the Oracle reveals: *{answer}*")
+
+        # Log the question and answer to a file
+        with open("questions_log.txt", "a") as log_file:
+            log_file.write(f"{datetime.now()} - {name} asked: \"{question}\" | Oracle answered: \"{answer}\"\n")
     else:
         st.warning("You must offer both your name and a question.")
+with st.expander("🔐 View Oracle Log (Private Eyes Only)"):
+    try:
+        with open("questions_log.txt", "r") as f:
+            log_data = f.read()
+            st.text(log_data)
+    except FileNotFoundError:
+        st.info("No questions have been asked yet.")
