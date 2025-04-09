@@ -1,3 +1,9 @@
+import streamlit as st
+import random
+import requests
+from datetime import datetime
+
+
 if st.button("Consult the Oracle"):
     if name and question:
         st.write("The incense swirls... the shadows gather...")
