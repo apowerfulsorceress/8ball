@@ -11,19 +11,37 @@ st.subheader("Summon the wisdom of the unseen...")
 name = st.text_input("Your name, seeker of hidden truths:")
 question = st.text_input("Ask your yes-or-no question:")
 
-# 🔮 Oracle responses
-responses = [
+# 🌞 Light Oracle responses (hopeful, wise, whimsical)
+light_responses = [
     "The stars align in your favor.",
     "The spirits whisper yes.",
     "Ask again when the moon is full.",
-    "The veil is too thick right now.",
-    "Dark omens... not likely.",
     "The cauldron bubbles with a yes.",
-    "Not even the runes can tell.",
     "Yes—if you trust your intuition.",
     "Absolutely. Trust the signs.",
-    "No. The fates say otherwise.",
-    "A message will come in a dream."
+    "A message will come in a dream.",
+    "Even the runes nod in approval.",
+    "The energy feels promising.",
+    "Yes—but be patient with the process."
+]
+
+# 🌑 Dark Oracle responses (sassy, ominous, shadowy)
+dark_responses = [
+    "You already know that. Why are you even asking?",
+    "No. The answer has always been no.",
+    "You will not like what happens if you ask again.",
+    "The spirits laugh… not with you.",
+    "Do you want the truth, or something pretty?",
+    "The mirror shatters. Ask no more.",
+    "Even the darkness recoils from that path.",
+    "Do you *really* want me to say it out loud?",
+    "You asked... you shouldn’t have.",
+    "No. And next time, bring an offering.",
+    "This is beneath you, and me.",
+    "Try again when you’re not being so desperate.",
+    "Don't waste the Oracle's breath on foolishness.",
+    "Oh darling... absolutely not.",
+    "You already made your choice. The rest is consequence."
 ]
 
 # 🧙‍♀️ Oracle button + answer + Google Form log
