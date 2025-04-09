@@ -44,26 +44,23 @@ dark_responses = [
     "You already made your choice. The rest is consequence."
 ]
 
-# 🧙‍♀️ Oracle button + answer + Google Form log
+# 🧙‍♀️ Oracle button + mood coin + response + logging
 if st.button("Consult the Oracle"):
     if name and question:
         st.write("The incense swirls... the shadows gather...")
-        answer = random.choice(responses)
+
+        # 🎲 Mood flip (light or dark)
+        mood = random.choice(["light", "dark"])
+        if mood == "light":
+            answer = random.choice(light_responses)
+        else:
+            answer = random.choice(dark_responses)
+
+        # 🌗 Reveal mood before answer
+        st.caption(f"The Oracle speaks from the {'🌞 light' if mood == 'light' else '🌑 shadows'}...")
         st.success(f"{name}, the Oracle reveals: *{answer}*")
 
-        # 💌 Send to Google Form (finally working 🖤)
+        # 💌 Send to Google Form
         form_url = "https://docs.google.com/forms/d/e/1FAIpQLSdEYgJt63t5-xrMBWNASkWKYoZ1UzXwakZX_zyMIe7oD12vbw/formResponse"
         form_data = {
-            "entry.749958729": name,
-            "entry.2088019051": question,
-            "entry.340729774": answer
-        }
-        headers = {
-            "Content-Type": "application/x-www-form-urlencoded"
-        }
-        response = requests.post(form_url, data=form_data, headers=headers)
-
-        if response.status_code != 200:
-            st.warning("Something went wrong sending to the Oracle Log.")
-    else:
-        st.warning("You must offer both your name and a question.")
+            "entry
