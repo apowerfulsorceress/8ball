@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "oracle-8-ball-logger",
+  "private_key_id": "42273e86e0ece7de530b73308e29593de9ee1c98",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDLD2TgtM+u2YuM\nwh4NpUlY+z/SgyySa308VsYNPfbRFPEpnXWbC1Cg/seJR4HBpkJlxN0EgkLDv1qa\nDTgcoxxW79E5B368WUNAzJXtN6AS4PYis5zZdGClAGhTx+XqLaxzh1brAmd4Qj0o\nqHUYFV6N8B3QZoQrr8l8/BjTZI4veLLXgrgSyBAUDIZLcfaRA4c6RU+4S0M4CbUQ\nraQL1xx/omxyalFix3G4e07xQMWoPrF5guDX1PBxnBkrWa5joI/cd/s1QgLZTEic\nmqlR+bKYfUTF0ScT3snuexLf/ZYLzRwD0seNSB+IzipUxzsbOqREeWZa075EXf/L\n5MC9fMo3AgMBAAECggEAGgatP3nH8VleYAT/VMYTFRhlhpCb1WEj35MgS6aIrHqv\n1aLMuzm431xYbHl29urdhsKz20tAzcBdwfH2IlbWSomZT43CNNeHXaul1GOKnPDV\ndf7UbdtTNG14HF46KIjVxMbwy9VL4rzcBDU3MNuIT3lFBlF6w54CcrEIaOEcskEI\n7/ldyjdzQvwqDdkYcW/JoyKJ0wTaoD5tf/tXisuiWTmyd9nsO4auAWl1tu3x1ay9\nr2d6JIwjz+ahrBcR0WmLnAd4dP6sJB5j2uFMdMxgtYUmDIGrEPxA5uVtFPsXUTSR\ncY2irTdlqON6vi1DZ24ZFlnqf+3jq/wq3uy3orEGaQKBgQD4A+Jxj4rAXzZFFJ9j\nY+xgKT7fhRVvXGPmrIILoJMXOa7tpcpAy1ddEnx/+yvpOJp3zYpdWU+z9Pur5IgL\nVBOoMSTjIi5ZKOZmPoKF+UkNeuLouVs/IPKKgXDSzecBY6Zfq5Sr3DI+ZH4ilq1j\nHzl7xFtFkrJSoyqvecX5NvGbeQKBgQDRmP6k1KqKdRy53xSUKmgSQh98gsuD1+CI\nW75CV+CI7Vfzem7CzmFHM5i/ejLY5viZd0/joe0GMj1W6PqCVuFkG9pGN6pTaRi5\nDuVJljeylZwUU7QgldopyGjdvCs5hvsWojJ9UDz1piuFJltXR7LbktCqaNaLyA2X\ny9Tqw7x3LwKBgHlK1Qy6qZ3pMo5YRpcCAFEK+t+vo0sCAS2IAlWTYzxBjqZUpXRI\nveIbr12bxd7aOtkKYXfDvPIChq6LJml75d0ko6idR9N86Cjqu0SwJKT+C0jLla9q\n+pL4OOgvoKESTgSN0ji2iK/wz6s0y3klhSRdZFHDK4i0maSVxldaIpDpAoGAO5To\nXmbuC+n6voPBz9S2POp7FOQBgnstotWhoi5k78e4hsg5EDumv5zVQSk1px8RcF7Q\nYP8459gEQ956x+52qASa6fcM/iUUGBc56s8/Cg8pjUW2IMU4fUQxO0cwamwKmIaH\nH8Rdb99K49DhilAhcfWsR6UByD6YTpxs7Ee0HZUCgYEAt9dzUdk3O3ssWlQn72Tq\nWKynldyXh5GUhjyUnhM5ywtYDdfOFl5bBAr2VFqgufnIEjydt2gpH6mQec8KvcPs\nqHSm6SUXODfeMHA+8c4q0LYWW+6nJuu4LUh7FkyZ0s9o08pJomZ452/EqIxCcdvq\nsTyLeO7djkLbQDon+Iavx3E=\n-----END PRIVATE KEY-----\n",
+  "client_email": "oracle-sheet-writer@oracle-8-ball-logger.iam.gserviceaccount.com",
+  "client_id": "109676188326017015037",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/oracle-sheet-writer%40oracle-8-ball-logger.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
