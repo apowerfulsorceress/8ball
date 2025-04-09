@@ -63,4 +63,16 @@ if st.button("Consult the Oracle"):
         # 💌 Send to Google Form
         form_url = "https://docs.google.com/forms/d/e/1FAIpQLSdEYgJt63t5-xrMBWNASkWKYoZ1UzXwakZX_zyMIe7oD12vbw/formResponse"
         form_data = {
-            "entry
+            "entry.749958729": name,
+            "entry.2088019051": question,
+            "entry.340729774": answer
+        }
+        headers = {
+            "Content-Type": "application/x-www-form-urlencoded"
+        }
+        response = requests.post(form_url, data=form_data, headers=headers)
+
+        if response.status_code != 200:
+            st.warning("Something went wrong sending to the Oracle Log.")
+    else:
+        st.warning("You must offer both your name and a question.")
