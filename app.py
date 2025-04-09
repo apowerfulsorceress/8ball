@@ -33,12 +33,12 @@ if st.button("Consult the Oracle"):
         answer = random.choice(responses)
         st.success(f"{name}, the Oracle reveals: *{answer}*")
 
-        # 💌 Send to Google Form
+        # 💌 Send to Google Form (finally working 🖤)
         form_url = "https://docs.google.com/forms/d/e/1FAIpQLSdEYgJt63t5-xrMBWNASkWKYoZ1UzXwakZX_zyMIe7oD12vbw/formResponse"
         form_data = {
-            "entry.1171538699": name,
-            "entry.1310975289": question,
-            "entry.1930830611": answer
+            "entry.749958729": name,
+            "entry.2088019051": question,
+            "entry.340729774": answer
         }
         headers = {
             "Content-Type": "application/x-www-form-urlencoded"
